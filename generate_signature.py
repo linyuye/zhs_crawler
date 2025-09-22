@@ -190,8 +190,8 @@ def main():
     # 配置参数 - 从抓包数据更新
     config = {
         'uuid': '',  # 从网页获取uid
-        'course_id': '11284392',  # 请替换为您的课程ID
-        'start_file_id': 30983322,  # 起始文件ID
+        'course_id': '',  # 请替换为您的课程ID
+        'start_file_id': ,  # 起始文件ID
         'count': 52,  # 发送次数
         'delay': 2,  # 请求间隔(秒)
         # 从抓包数据中获取的完整Cookie
@@ -247,4 +247,5 @@ def main():
                 print(f"      响应: {result['response'][:100]}...")  # 只显示前100个字符
 
 if __name__ == "__main__":
+
     main()
