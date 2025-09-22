@@ -11,21 +11,21 @@
 ## 参数说明
 
 ### 固定参数（按需求设置）
-- `study_total_time`: 3600 (1小时，固定值)
-- `end_watch_time`: 3600 (观看结束时间，固定值)
+- `study_total_time`: 360 
+- `end_watch_time`: 360 (观看结束时间，固定值)
 - `start_watch_time`: 0 (观看开始时间，固定值)
 
 ### 动态参数
 - `start_date`: 当前时间戳 - 1小时 (毫秒)
 - `end_date`: 当前时间戳 (毫秒)
-- `file_id`: 从30983324开始自增
+- `file_id`: 从 你需要学习的视频id 开始自增
 
 ### 配置参数
 ```python
 config = {
-    'uuid': 'dDxoaWO3',        # 您的用户UUID
-    'course_id': '11284392',    # 课程ID
-    'start_file_id': 30983324,  # 起始文件ID
+    'uuid': '',        # 您的用户UUID
+    'course_id': '',    # 课程ID
+    'start_file_id': ,  # 起始文件ID
     'count': 5,                 # 提交次数
     'delay': 2,                 # 请求间隔(秒)
     'cookies': ''               # 重要：需要填入您的Cookie
@@ -137,4 +137,5 @@ signature = hashlib.md5(sign_string.encode('utf-8')).hexdigest()
 - **签名生成**：完全复现前端MD5算法
 - **时间管理**：基于系统时间自动计算
 - **HTTP请求**：使用requests库发送POST请求
+
 - **错误处理**：完整的异常捕获和处理机制
