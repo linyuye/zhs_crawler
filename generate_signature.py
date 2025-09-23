@@ -111,8 +111,7 @@ def send_study_record(uuid, course_id, file_id, cookies=None, authorization=None
         'Zhsuid': ''
     }
     if not headers['Zhsuid'] :
-        print("请设置Zhsuid请求头,否则请求会失败,从浏览器抓包获得")
-        exit(1)
+        print("请设置Zhsuid请求头,否则请求会失败,从浏览器抓包获得,但实际测试不需要也可以")
     # 添加Authorization头
     if authorization:
         headers['Authorization'] = authorization
@@ -249,3 +248,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
