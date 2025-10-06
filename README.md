@@ -138,4 +138,7 @@ signature = hashlib.md5(sign_string.encode('utf-8')).hexdigest()
 - **时间管理**：基于系统时间自动计算
 - **HTTP请求**：使用requests库发送POST请求
 
-- **错误处理**：完整的异常捕获和处理机制
+- **错误处理**：完整的异常捕获和处理机制  
+
+## License  
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.  
